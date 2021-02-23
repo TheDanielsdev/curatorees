@@ -1,0 +1,685 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+P {
+    font-weight: 300;
+    color: #111;
+}
+
+.darkMode {
+    position: fixed;
+    z-index: 1000;
+    top: 300px;
+    margin-left: -96px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 100%;
+    box-sizing: 0 5px 20px rgb(0, 0, 0, 0.05);
+    background-color: #000;
+    color: #fff;
+}
+
+.darkMode:focus {
+    outline: none;
+}
+
+.darken {
+    background-color: #000;
+}
+
+.darken .carousel .prev-second-slide {
+    background-color: blue;
+}
+
+.darken .carousel .next-second-slide {
+    background-color: blue;
+}
+
+.darken .btn {
+    background-color: blue;
+    color: #fff;
+}
+
+.darken .titleText span {
+    color: blue;
+}
+
+.darken p {
+    color: #fff;
+}
+
+.darken h2 {
+    color: #fff;
+}
+
+.darken h3 {
+    color: #fff;
+}
+
+.darken header.sticky {
+    background-color: blue;
+}
+
+.darken .menu .content .Box .text h3 {
+    color: #fff;
+}
+
+
+/* Banner section*/
+
+.carousel-caption h5 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: -450px;
+}
+
+.carousel-caption p {
+    color: #fff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.banner a {
+    position: relative;
+    z-index: 1000;
+    margin-left: 580px;
+    margin-top: -700px;
+}
+
+.btn {
+    font-size: 1em;
+    color: #fff;
+    background: rgb(28, 189, 243);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
+
+
+/* Header section starts here*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo {
+    margin-left: -90px;
+}
+
+
+/*so this is the code that gives the header area the white border when scrolling down on the page. sequel to the sticky class we have it in javasript and toggled.*/
+
+header.sticky {
+    background: #fff;
+    width: 100%;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgb(0, 0, 0, 0.05);
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header.sticky .navigation {
+    margin-right: -20px;
+}
+
+header .logo span {
+    color: rgb(28, 189, 243);
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+    margin-right: -200px;
+}
+
+header .navigation li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+header .navigation li a:hover {
+    color: rgb(26, 186, 240);
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}
+
+header.sticky .navigation li a:hover {
+    color: rgb(26, 186, 240);
+}
+
+
+/*About section starts here*/
+
+section.about {
+    padding: 100px;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: rgb(19, 186, 241);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+
+.row .col50 .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-abt {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+
+/*menu section starts here*/
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about p {
+    padding-top: 20px;
+}
+
+.col50 h2 {
+    border-bottom: 1px solid rgb(15, 185, 241);
+    width: 300px;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.menu .content .Box {
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    transition: 2s;
+}
+
+.menu .content .Box:hover {
+    transform: scale(1.1);
+}
+
+.menu .content .Box .imgBx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.menu .content .Box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .Box .text {
+    padding: 15px 0 5px;
+}
+
+.menu .content .Box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+
+.menu p {
+    padding: 20px 50px;
+}
+
+.titleText {
+    border-bottom: 1px solid rgb(17, 184, 240);
+}
+
+
+/*expert section*/
+
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.expert .content .Box {
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .content .Box .imgBx {
+    position: relative;
+    width: 100%;
+    width: 300px;
+}
+
+
+/*i have an issue here, i will continue from here on the video, i am @ 22:40 */
+
+.expert .content .Box .imgBx img {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .Box .text {
+    padding: 15px 0 5px;
+}
+
+.property {
+    margin-top: 100px;
+}
+
+.property h2 {
+    text-align: center;
+    margin-left: 500px;
+}
+
+.property p {
+    padding: 10px 50px;
+}
+
+#btn-ppty {
+    margin-top: -150px;
+}
+
+.second-slide {
+    width: 500px;
+    height: 500px;
+    margin: 50px 400px;
+}
+
+.second-slide p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 50px;
+}
+
+.next-second-slide {
+    background-color: rgb(17, 184, 240);
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+}
+
+.prev-second-slide {
+    background-color: rgb(17, 184, 240);
+    width: 50px;
+    height: 50px;
+    margin-top: 150px;
+}
+
+
+/*testimonials section*/
+
+.testimonials {
+    background-image: url(bg2.jpg);
+    background-size: cover;
+}
+
+.white .titleText,
+.white p {
+    color: #fff;
+}
+
+.testimonials .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.testimonials .content .Box {
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonials .content .Box .imgBx {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .Box .imgBx img {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .Box .text {
+    text-align: center;
+}
+
+.testimonials .content .Box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .Box .text h3 {
+    margin-top: 20px;
+    color: #111;
+    font-style: 1em;
+    color: rgb(34, 190, 241);
+    font-weight: 600;
+}
+
+.contact {
+    background: url(images/bg3.jpg);
+    background-size: cover;
+    margin-top: 50px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.contact .title h2 {
+    color: #000;
+}
+
+.darken .contact .title h2 {
+    color: #fff;
+}
+
+.contact .title p {
+    color: #000;
+}
+
+.darken .contact .title p {
+    color: #fff;
+}
+
+.contactForm {
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgb(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 450px;
+    border-radius: 50px 50px;
+}
+
+.contactForm h3 {
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    border: 2px solid #555;
+    padding: 10px;
+    color: #000;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    font-size: 1em;
+    color: #fff;
+    background: rgb(10, 181, 238);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.darken .contactForm .inputBox input[type="submit"] {
+    color: #fff;
+    background: blue;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
+        padding: 10px 50px;
+    }
+    header .navigation {
+        display: none;
+    }
+    header .logo {
+        margin-left: -30px;
+    }
+    header .navigation.active {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li {
+        margin-left: 0;
+    }
+    header .navigation li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    .menuToggle.active {
+        background: url(images/close.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .Box {
+        margin: 10px;
+    }
+    .menu .content .Box .imgBx {
+        height: 260px;
+    }
+    .title {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .Box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .btn-abt {
+        margin-left: 50px;
+        margin-top: 500px;
+    }
+    .row .col50 .imgBx img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin-top: -500px;
+    }
+    .menu {
+        margin-top: -300px;
+    }
+    .property h2 {
+        text-align: center;
+        margin-left: 500px;
+        margin: -20px;
+        margin-top: -100px;
+        margin-bottom: 30px;
+    }
+    .col50 .titleText {
+        margin-left: 100px;
+    }
+    .property .carousel {
+        margin-left: auto;
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .contactForm {
+        padding: 35px 40px;
+        max-width: 500px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        justify-content: center;
+        margin-left: 30px;
+    }
+}
